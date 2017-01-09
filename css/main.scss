@@ -1,0 +1,23 @@
+---
+---
+
+
+
+@import "bootstrap/bootstrap";
+@import "fa/font-awesome";
+
+$icon-font-path: "../fonts/bootstrap";
+$fa-font-path: "../fonts/fa";
+
+/** Main */
+
+h2 {
+  color: white;
+  font-size: 100px;
+}
+
+img.logo.img-responsive {
+display: inline-block;
+margin-left: auto;
+margin-right: auto;
+}
