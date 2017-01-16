@@ -17,16 +17,22 @@ $fa-font-path: "../fonts/fa";
 /** Main */
 
 body {
-  background-image: url("../img/background1.jpg");
+
 }
 
 .main-content {
-  padding-bottom: 50px;
+  background-image: url("../img/citybackground.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  .top-content {
+    background-color: none;
+    padding-bottom: 200px;
+  }
   h2, h3, a {
     font-family: brandFont;
     text-align: center;
     font-weight: bold;
-    color: #002b58;
+    color: white;
   }
   h2 {
     font-size: 2.25em;
@@ -48,11 +54,36 @@ body {
     text-align: center;
   }
 
-  a.title-btn , a.title-btn:hover, a.title-btn:visited {
+  a.title-btn {
+    text-decoration: none;
+    color: white;
+    font-size: 1.25em;
+    border: 1px solid #002b58;
+    padding: 10px 50px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    background-color: #002b58;
+    transition: all 1.25s ease-in;
+    -webkit-transition: all 1.25s ease-in;
+    -moz-transition: all 1.25s ease-in;
+  }
+
+  a.title-btn:visited {
+    text-decoration: none;
+    color: white;
+    font-size: 1.25em;
+    border: 1px solid #002b58;
+    padding: 10px 50px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    background-color: #002b58;
+  }
+
+  a.title-bth:hover{
     text-decoration: none;
     color: #002b58;
     font-size: 1.25em;
-    border: 1px solid #002b58;
+    border: 1px solid white;
     padding: 10px 50px;
     border-radius: 5px;
     margin-bottom: 30px;
@@ -60,37 +91,38 @@ body {
   }
 }
 
-#triangle {
-	width: 0;
-	height: 0;
-	border-left: 60px solid transparent;
-	border-right: 60px solid transparent;
-	border-bottom: 100px solid #fce769;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  margin-top: 150px;
-}
+
 
 /** Secondary */
 
 .section-hook {
-  background-color: #fce769;
+  background-color: #002b58;
   padding-top: 20px;
   padding-bottom: 40px;
   h2, h3, a {
     text-align: center;
     font-family: brandFont;
     font-weight: bold;
-    color: #002b58;
+    color: white;
   }
+}
+#triangle-down {
+	width: 0;
+	height: 0;
+	border-left: 35px solid transparent;
+	border-right: 35px solid transparent;
+	border-top: 70px solid #002b58;
+  margin-left: 150px;
+}
+.tri-down {
+  background-color: #f4f4f4;
 }
 
 .secondary-content {
   padding-left: 50px;
   padding-right: 30px;
-  background-color: #fff6bd;
-  padding-top: 50px;
+  background-color: #f4f4f4;
+  padding-top: 0px;
   padding-bottom: 50px;
   h2, h3, a {
     text-align: center;
